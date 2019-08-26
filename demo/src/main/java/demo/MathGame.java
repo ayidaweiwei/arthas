@@ -44,6 +44,7 @@ public class MathGame {
         }
         log.info(" info >> call the method of print :",sb);
         log.debug(" Debug >> call the method of print :",sb);
+        System.out.println("test code change");
         System.out.println(sb);
     }
 
