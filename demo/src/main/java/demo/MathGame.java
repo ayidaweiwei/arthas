@@ -18,6 +18,7 @@ public class MathGame {
     public static void main(String[] args) throws InterruptedException {
         MathGame game = new MathGame();
         while (true) {
+            log.info("hello world");
             game.run();
             TimeUnit.SECONDS.sleep(1);
         }
