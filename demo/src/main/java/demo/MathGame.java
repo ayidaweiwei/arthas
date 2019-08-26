@@ -1,10 +1,15 @@
 package demo;
 
+
+
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+@Slf4j
 public class MathGame {
     private static Random random = new Random();
 
@@ -37,6 +42,8 @@ public class MathGame {
         if (sb.charAt(sb.length() - 1) == '*') {
             sb.deleteCharAt(sb.length() - 1);
         }
+        log.info(" info >> call the method of print :",sb);
+        log.debug(" Debug >> call the method of print :",sb);
         System.out.println(sb);
     }
 
